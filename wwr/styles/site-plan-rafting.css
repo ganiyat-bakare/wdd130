@@ -2,12 +2,6 @@
 
 
 
-body {
-    font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
-}
-
 :root {
     --primary-color: #3B6D79;
     --secondary-color:#4E5354;
@@ -21,6 +15,12 @@ body {
     --nav-link-color: #3D6D79;
     --nav-hover-link-color:#FFB914;
     --nav-hover-background-color: #4E5354;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
 }
 
 h1 h2 h3 h4 h5 h6 {
