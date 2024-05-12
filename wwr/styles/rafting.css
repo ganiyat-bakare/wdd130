@@ -25,7 +25,7 @@ nav a {
 }
 
 section P {
-    font-weight: bold;
+    font-family: var(--paragraph-font);
 }
 
 /* Class Selectors*/
