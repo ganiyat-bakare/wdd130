@@ -172,6 +172,8 @@ footer p {
 
 .history p {
     margin: 0;
+    padding-left: 2rem;
+    padding-right: 1rem;
 }
 
 .history h2 {
@@ -187,7 +189,7 @@ footer p {
     border: 2px solid #050273;
     background-color: #f4f4f4;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-column: 1/6;
     grid-row: 2;
     align-content: center;    
