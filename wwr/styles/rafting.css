@@ -171,9 +171,7 @@ footer p {
 }
 
 .history p {
-    margin: 0;
-    padding-left: 2rem;
-    padding-right: 1rem;
+    padding: 0 10px 2rem 2rem;
 }
 
 .history h2 {
