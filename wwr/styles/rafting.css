@@ -16,8 +16,20 @@
     --nav-hover-background-color: rgb(48, 214, 200);
 }    
 
+header {
+    display: grid;
+    max-width: 2000px;
+    grid-template-columns: 1fr 1fr 10px;
+    border: 2px solid #050273;
+    margin: 1rem auto;
+    background-color: var(--accent2-color);
+}
+
 h2 {
     color: var(--primary-color);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 nav a {
@@ -28,12 +40,29 @@ section P {
     font-family: var(--paragraph-font);
 }
 
+footer {
+    margin: 1rem auto;
+    border: 2px solid #050273;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+footer p {
+    flex-grow: 2;
+    margin-left: 10rem;
+    padding-left: 8rem;
+    text-align: center;
+}
+
 /* Class Selectors*/
+
 .hero img {
     position: relative;
     display: block;
     width: 100%;
     height: auto;
+    margin: 0 auto;
 }
 
 .hero h1 {
@@ -45,7 +74,7 @@ section P {
     color: var(--primary-color);
     padding: 0 5rem;
     font-size: 40px;
-    margin: 0; 
+    margin: 0 auto; 
 }
 
 .hero article {
@@ -55,7 +84,7 @@ section P {
     right: 60px;
     background-color: rgba(3, 57, 86, 0.6);
     padding: 10px;
-
+    margin: 0 auto;
 }
 
 .hero article img {
@@ -76,4 +105,99 @@ section P {
 
 .sociallinks img {
     width: 50px;
+}
+
+.sociallinks:last-child {
+    flex-grow: 1;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+.grid img {
+    width: 200px;
+    height: auto;
+    padding-left: 8rem;
+    padding-right: 7rem;
+}
+
+.grid nav {
+    display: flex;
+    width: 80%;
+    background-color: #fff;
+    justify-content: space-evenly;
+    border: 1.5px solid #050273;
+}
+
+.grid nav a {
+    border-right: 1px solid #050273;
+    background-color: #fff;
+    padding: 0.5rem 2rem;
+    font-weight: 500;
+    color: #050273;
+}
+
+.grid nav a:hover {
+    color: var(--nav-link-color);
+    background-color: var(--nav-background-color);
+}
+
+.grid nav a:visited {
+    color: rgb(42, 35, 245);
+}
+
+.grid nav a:last-child {
+    border-right: none;
+}
+
+.history {
+    margin: 1rem auto;
+    border: 2px solid #050273;
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history img {
+    width: 100%;
+    height: auto;
+}
+
+.history p {
+    margin: 0;
+}
+
+.history h2 {
+    text-align: center;
+    margin-bottom: 1px;
+    margin-top: 0;
+    grid-column: 1/8;
+    grid-row: 1;
+}
+
+.figure {
+    margin: 1rem auto;
+    border: 2px solid #050273;
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-column: 1/6;
+    grid-row: 2;
+    align-content: center;    
+}
+
+.figure img {
+    width: 100%;
+}
+
+.figure h2 {
+    grid-column: 1/8;
+    grid-row: 1;
 }
