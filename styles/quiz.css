@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Playfair, serif;
+    font-size: 1.2em;
+    color: #333;
+    background: #fff;
+}
+
+header {
+    margin: 0 auto;
+    width: 650px;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: #050273;
+    text-align: left;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+
+div {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+label, input, button, select, textarea p {
+    font-family: Playfair, serif;
+}
+
+label {
+    text-align: left;
+    font-size: 1.2rem;
+    padding-right: 1rem;
+    font-weight: 350;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+button {
+    margin: .5rem;
+    width: 150px;
+    background-color: #050273;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    justify-self: right;
+}
+
+button:hover {
+    background-color: steelblue;
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+}
+
+/* Class Selectors */
+.question p {
+    text-align: left;
+    font-weight: 550;
+    color: #050273;
+}
