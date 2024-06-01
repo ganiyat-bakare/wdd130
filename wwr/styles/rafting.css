@@ -82,9 +82,8 @@ button {
     color: #fff;
     border: none;
     border-radius: .5rem;
-    padding: 12px 20px;
+    padding: 0.75rem;
     font-size: 1.2rem;
-    cursor: pointer;
 }
 
 button:hover {
@@ -93,7 +92,7 @@ button:hover {
 
 /* Class Selectors*/
 
-.hero img, .map, .container img {
+.hero img, .map, .container img, .parent img {
     position: relative;
     display: block;
     width: 100%;
@@ -338,6 +337,7 @@ button:hover {
     margin: 0 auto;
     width: 70%;
     height: 350px;
+    border: 2px solid #ffa500;
 }
 
 .container h1 {
@@ -462,4 +462,218 @@ td:last-of-type {
 
 tbody > tr:nth-of-type(even) {
     background-color: rgba(237, 238, 242);
+}
+
+.parent {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    padding: 0;
+}
+  
+.parent .slide-show-container {
+    display: flex;
+}
+
+/* CSS Styles in common for all slides */
+.parent .wrapper-one,
+.parent .wrapper-two,
+.parent .wrapper-three {
+    background-color: #eee;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100vw;
+    position: absolute;
+    object-fit: cover;
+}
+
+/* CSS Styles for each slide */
+/* Add the image as background attribute and add some animation */
+
+.wrapper-one {
+    background-image: none;
+}
+
+.wrapper-two {
+    background-image: none;
+    animation: slideTwoAnim 20s infinite; /* Adjust animation duration for second slides */
+}
+
+.wrapper-three {
+    background-image: none;
+    animation: slideThreeAnim 20s infinite; /* Adjust animation duration for third slides */
+}
+
+/* Styles for the image */
+.wrapper-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Animations */
+@keyframes slideTwoAnim {
+    0%{opacity:0;}
+    17%{opacity:0;}
+    33%{opacity:1;}
+    50%{opacity:1;}
+    67%{opacity:0;}
+    100%{opacity:0;}
+}
+
+@keyframes slideThreeAnim {
+    0%{opacity:0;}
+    50%{opacity:0;}
+    67%{opacity:1;}
+    83%{opacity:1;}
+    100%{opacity:0;}
+}
+
+.parent blockquote {
+    color: #fff;
+    background-color: rgba(6, 2, 115, 0.4);
+    position: absolute;
+    font-family: var(--heading-font);
+    padding: 0 9.1rem;
+    margin: 0 auto; 
+    font-size: 40px;
+    top: 250px;
+    
+}
+
+.parent h1 {
+    position: absolute;
+    top: 100px;
+    left: 290px;
+    color: #fff;
+    background-color: rgba(6, 2, 115, 0.4);
+    font-family: var(--heading-font);
+    padding: 0 5rem;
+    font-size: 40px;
+    margin: 0 auto; 
+}
+
+.newsletter {
+    font-family: Playfair, serif;
+    font-size: 1.5em;
+    color: #050273;
+    width: 450px;
+    margin: 50px 0 30px 70px;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: #ffa500;
+}
+
+.newsletter fieldset {
+    margin: 1rem;
+    border: 1px solid #050273;
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: #050273;
+    font-size: 1.3em;
+}
+
+.items {
+    display: grid;
+    align-items: left;
+    grid-template-columns: 1fr 2fr;
+    margin: 1rem;
+}
+input {
+    font-family: Montserrat, sans-serif;
+    color: #050273;
+}
+
+label {
+    text-align: left;
+    padding-right: 0.5rem;
+    font-family: Montserrat, sans-serif;
+}
+
+input {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.newsletter button {
+    margin: 1rem;
+    width: 140px;
+    background-color: #050273;
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    justify-self: left;
+}
+
+button:hover {
+    background-color: steelblue;
+}
+
+.column img {
+    width: 45%;
+    left: 630px;
+    top: 682px;
+    margin: 50px 0 30px 0;
+    border: 2px solid #ffa500;
+    border-radius: 0.5rem;
+    position: absolute;
+}
+
+.column button {
+    position: absolute;
+    left: 632px;
+    top: 900px;
+    padding: 1.5rem 2rem;
+    margin: 0 auto; 
+    font-size: 30px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0;
+    font-family: Playfair, serif;
+}
+
+.column button:hover {
+    background-color: #050273;
+}
+
+.purpose {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; 
+}
+
+.purpose article {
+    padding: 20px;
+}
+
+.purpose img {
+    max-width: 100%;
+    display: block;
+    border: 2px solid #ffa500;
+    border-radius: 0.5rem; 
+}
+
+.purpose address {
+    margin: 10px 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    font-weight: 400; 
+}
+
+.offer address {
+    text-align: center;
+}
+
+.offer h2 {
+    font-weight: 600;
+    font-size: 2rem;
 }
