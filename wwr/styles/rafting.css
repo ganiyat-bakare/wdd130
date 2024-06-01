@@ -103,12 +103,24 @@ button:hover {
 .map iframe {
     position: absolute;
     display: block;
-    width: 51%;
-    height: 712px;
-    left: 582px;
-    top: 373px;
+    width: 40%;
+    height: 480px;
+    left: 600px;
+    top: 510px;
     border: 2px solid #050273;
-    margin: 0 auto;
+    margin: 2rem auto;
+    margin-left: 5rem;
+}
+
+.map p {
+    position: absolute;
+    left: 700px;
+    top: 450px;
+    width: 150px;
+    color: #050273;
+    font-size: 1rem;
+    padding-bottom: 10rem;
+    font-weight: 500;
 }
 
 .hero h1 {
@@ -129,7 +141,7 @@ button:hover {
     left: 50px;
     right: 60px;
     background-color: rgba(3, 57, 86, 0.6);
-    padding: 10px;
+    padding: 15px;
     margin: 0 auto;
 }
 
@@ -284,7 +296,7 @@ button:hover {
     background-color: #fff;
     color: #050273;
     padding: 20px;
-    padding-top: 30px;
+    padding-top: 50px;
     margin: 1rem;
 }
 
@@ -367,14 +379,12 @@ button:hover {
     color: #050273;
 }
 .trip-wrapper {
-    gap: 1rem;
-    width: 80%;
-    margin: 0 100px 0 130px;
+    width: 75%;
+    gap: .5rem;
+    margin: 0 50px 0 180px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column: 1/6;
-    grid-row: 2;
-    align-content: center;  
+    justify-content: center;
 }
 
 .trip {
@@ -384,20 +394,12 @@ button:hover {
 }
 
 .trip img {
-    width: 220px;
+    width: 210px;
     height: 150px;
     padding-top: 4px;
     padding-left: 4px;
     border-top-left-radius: 3rem;
     border-top-right-radius: 3rem;  
-}
-
-.trip figcaption {
-    text-align: center;
-    color: #050273;
-    padding-top: 10px;
-    font-size: 20px;
-    font-weight: 700;
 }
 
 .trip p {
@@ -490,7 +492,6 @@ tbody > tr:nth-of-type(even) {
 }
 
 /* CSS Styles for each slide */
-/* Add the image as background attribute and add some animation */
 
 .wrapper-one {
     background-image: none;
@@ -511,6 +512,10 @@ tbody > tr:nth-of-type(even) {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.wrapper-image img {
+    width: 100%;
 }
 
 /* Animations */
@@ -581,7 +586,6 @@ legend {
 
 .items {
     display: grid;
-    align-items: left;
     grid-template-columns: 1fr 2fr;
     margin: 1rem;
 }
